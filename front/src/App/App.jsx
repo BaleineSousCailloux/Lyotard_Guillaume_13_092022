@@ -5,6 +5,8 @@ import Footer from '../components/Footer'
 import Home from '../pages/Home'
 import SignIn from '../pages/SignIn'
 import Profile from '../pages/Profile'
+import { Provider } from 'react-redux'
+import store from '../stores/userStore'
 // import Profil from './pages/Profil'
 // import Setting from './pages/Setting'
 // import Community from './pages/Community'
@@ -13,15 +15,17 @@ import Profile from '../pages/Profile'
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </Provider>
   )
 }
 

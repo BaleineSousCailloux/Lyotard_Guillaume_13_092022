@@ -8,13 +8,12 @@ html {
   
   body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 85vh;
   }
   
   .main {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
   }
   
   .bg-dark {
@@ -51,12 +50,18 @@ html {
   .main-nav a.router-link-exact-active {
     color: #42b983;
   }
+
+  .main-nav-group {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   
   .main-nav-item {
     text-decoration: none;
     margin-right: 0.5rem;
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     font-weight: bold;
     color: #2c3e50;
   }
@@ -260,7 +265,7 @@ html {
     flex: 1;
   }
   
-  .edit-button {
+  .edit-name-button {
     border-color: #00bc77;
     background-color: #00bc77;
     color: #fff;
@@ -273,7 +278,7 @@ html {
     margin-bottom: 2rem;
   }
   
-  .transaction-button {
+  .view-transactions-button {
     display: block;
     width: 100%;
     padding: 8px;
