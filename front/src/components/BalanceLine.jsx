@@ -10,9 +10,7 @@ function BalanceLine({ title, balance, description }) {
         <p className="account-amount">${balance}</p>
         <p className="account-amount-description">{description}</p>
       </div>
-      <div className="account-content-wrapper cta">
-        <ActiveButton title="View transactions" />
-      </div>
+      <ActiveButton title="View transactions" />
     </section>
   )
 }

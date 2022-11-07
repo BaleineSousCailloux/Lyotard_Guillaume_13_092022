@@ -66,6 +66,11 @@ html {
     color: #2c3e50;
   }
 
+  .welcome {
+    font-size: 2.5em;
+    margin: 20px
+  }
+
   .fa {
     margin-right: 5px;
   }
@@ -236,10 +241,8 @@ html {
     background-color: #fff;
     width: 80%;
     margin: 0 auto;
-    flex-direction: column;
     padding: 1.5rem;
     box-sizing: border-box;
-    text-align: left;
     margin-bottom: 2rem;
   }
   
@@ -261,17 +264,28 @@ html {
   }
   
   .account-content-wrapper {
-    width: 100%;
-    flex: 1;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
   
-  .edit-name-button {
+  .edit-name-button, .save-button {
     border-color: #00bc77;
     background-color: #00bc77;
     color: #fff;
     font-weight: bold;
     padding: 10px;
+    margin-top: 1rem;
   }
+
+  .updateName {
+    width: 15em;
+    margin: 10px;
+    font-size: 1em;
+    text-align: center;
+  }
+
   
   .header {
     color: #fff;
@@ -280,11 +294,11 @@ html {
   
   .view-transactions-button {
     display: block;
-    width: 100%;
-    padding: 8px;
+    width: fit-content;
+    word-break: keep-all;
+    padding: 15px;
     font-size: 1.1rem;
     font-weight: bold;
-    margin-top: 1rem;
     border-color: #00bc77;
     background-color: #00bc77;
     color: #fff;
@@ -294,10 +308,7 @@ html {
     .account {
       flex-direction: row;
     }
-  
-    .account-content-wrapper.cta {
-      flex: 0;
-    }
+
   
     .transaction-button {
       width: 200px;

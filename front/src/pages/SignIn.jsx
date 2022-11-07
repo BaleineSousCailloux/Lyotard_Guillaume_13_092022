@@ -7,7 +7,7 @@ function SignIn() {
     <main className="main bg-dark">
       <section className="sign-in-content">
         <FaUserCircle className="fa fa-user-circle sign-in-icon" />
-        <h1>Sign In</h1>
+        <h2>Sign In</h2>
         <SignInForm />
       </section>
     </main>

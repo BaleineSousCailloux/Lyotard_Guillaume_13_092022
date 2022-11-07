@@ -2,7 +2,7 @@ import { combineReducers, createStore } from 'redux'
 import axios from 'axios'
 import { produce } from 'immer'
 
-// va falloir ajouter nom prénom dans la data qui contient le token dans user.data
+// state
 const initialState = {
   status: 'void',
   token: null,
@@ -44,9 +44,6 @@ const userSetProfileRejected = (error) => ({
 })
 
 const URL = 'http://localhost:3001/api/v1/user/'
-
-// selector
-// const selectFreelances = (state) => state.freelances
 
 // actions
 export async function loginUser(store, email, password) {

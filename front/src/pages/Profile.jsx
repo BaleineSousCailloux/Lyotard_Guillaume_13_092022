@@ -12,7 +12,6 @@ function Profile() {
   const [isEditing, setIsEditing] = useState(false)
   const store = useStore()
   const navigate = useNavigate()
-  console.log(store.getState())
   const token = store.getState().user.token
   useEffect(() => {
     const callUserProfile = async () => {
@@ -39,37 +38,40 @@ function Profile() {
   return (
     <main className="main bg-dark">
       <div className="header">
-        <h1>
-          Welcome back
-          <br />
-          {!isEditing && (
-            <div>
-              <span>
-                {firstName} {lastName}
-              </span>
-              <br />
-              <ActiveButton title="Edit Name" action={startEdit} />
-            </div>
-          )}
-          {isEditing && (
-            <div>
-              <input
-                type="texte"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-              />
-              <input
-                type="texte"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-              />
-              <br />
-              <ActiveButton title="Save" action={saveName} />
-            </div>
-          )}
-        </h1>
+        <h2 className="welcome">Welcome back</h2>
+        {!isEditing && (
+          <div>
+            <span className="welcome">
+              {firstName} {lastName}
+            </span>
+            <br />
+            <ActiveButton title="Edit Name" action={startEdit} />
+          </div>
+        )}
+        {isEditing && (
+          <div>
+            <label htmlFor="firstName">First Name</label>
+            <input
+              className="updateName"
+              id="firstName"
+              type="texte"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              className="updateName"
+              id="lastName"
+              type="texte"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+            />
+            <br />
+            <ActiveButton title="Save" action={saveName} />
+          </div>
+        )}
       </div>
-      <h2 className="sr-only">Accounts</h2>
+      <h3 className="sr-only">Accounts</h3>
 
       <BalanceLine
         title="Argent Bank Checking (x8349)"

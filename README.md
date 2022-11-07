@@ -29,7 +29,7 @@ New application for users authentication and accounts/transactions tracking for 
         then run `npm run populate-db`command
 
   Open a new terminal and run `cd back` command,
-  then run `npm run dev:server start`command
+  then run `npm run dev:server`command
   the backend will open http://localhost:3001
 
 - FrontEnd:
@@ -41,8 +41,8 @@ New application for users authentication and accounts/transactions tracking for 
 
 ## HTML Validations
 
-- [AChecker](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_13_092022/front/validations/AChecker.png)
-- [W3C](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_13_092022/front/validations/W3C.png)
+- [AChecker](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_13_092022/front/validations/AChecker)
+- [W3C](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_13_092022/front/validations/W3C)
 
 ## Author
 
