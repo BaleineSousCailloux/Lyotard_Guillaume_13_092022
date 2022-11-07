@@ -8,7 +8,7 @@
 
 ---
 
-![](./front/src/public/argentBankLogo.png)
+![](front/src/public/argentBankLogo.png)
 
 ## Presentation
 
