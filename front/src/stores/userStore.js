@@ -13,6 +13,7 @@ const initialState = {
 const LOGIN = 'user/login'
 const LOGIN_RESOLVED = 'user/loginResolved'
 const LOGIN_REJECTED = 'user/loginRejected'
+const LOGOUT = 'user/logout'
 const PROFILE = 'user/profile'
 const SET_PROFILE = 'user/setProfile'
 const PROFILE_RESOLVED = 'user/profileResolved'
@@ -22,6 +23,7 @@ const SET_PROFILE_REJECTED = 'user/setProfileRejected'
 const userLogin = () => ({ type: LOGIN })
 const userLoginResolved = (data) => ({ type: LOGIN_RESOLVED, payload: data })
 const userLoginRejected = (error) => ({ type: LOGIN_REJECTED, payload: error })
+const userLogout = () => ({ type: LOGOUT })
 const userGetProfile = () => ({ type: PROFILE })
 const userSetProfile = () => ({ type: SET_PROFILE })
 const userProfileResolved = (data) => ({
@@ -60,6 +62,10 @@ export async function loginUser(store, email, password) {
   } catch (error) {
     store.dispatch(userLoginRejected(error))
   }
+}
+
+export function logoutUser(store) {
+  store.dispatch(userLogout())
 }
 
 //profile user : accès aux ressources protégées du backend, entête Authorization nécessaire avec un token
@@ -118,7 +124,6 @@ function userReducer(state = initialState, action) {
         }
         return
       }
-      // case LOGOUT
       case LOGIN_RESOLVED: {
         if (draft.status === 'pending' || draft.status === 'updating') {
           draft.token = action.payload
@@ -134,6 +139,11 @@ function userReducer(state = initialState, action) {
           draft.status = 'rejected'
           return
         }
+        return
+      }
+      case LOGOUT: {
+        draft.token = null
+        draft.status = 'resolved'
         return
       }
       case SET_PROFILE_RESOLVED:

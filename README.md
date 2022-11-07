@@ -1,2 +1,54 @@
-# Lyotard_Guillaume_13_092022
-Project 13 OC - ArgentBank
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![MongoDB Community Server](https://www.mongodb.com/try/download/community)
+
+---
+
+![](./front/src/public/argentBankLogo.png)
+
+## Presentation
+
+New application for users authentication and accounts/transactions tracking for our client Argent Bank
+
+## Prerequisites
+
+- [NodeJS (**version 18.7.0**)](https://nodejs.org/en/)
+- [NPM (**version 8.14**)](https://www.npmjs.com/)
+
+## Installing the app
+
+- Forke and clone the repository : https://github.com/BaleineSousCailloux/Lyotard_Guillaume_12_082022.git
+
+- install [MongoDB Community Server](https://www.mongodb.com/try/download/community)
+
+- Backend :
+    * once : open a new terminal and run `cd back` command,
+  then run `npm run populate-db`command
+
+  open a new terminal and run `cd back` command,
+  then run `npm run dev:server start`command
+  the backend will open http://localhost:3001
+
+- FrontEnd:
+  open a new terminal and run `cd front` command,
+  then run the `npm start` command will allow you to run the application on http://localhost:3000
+
+## Documentation
+
+open a new terminal and run `cd front` command, then run the `npm doc` command to generate the documentation.
+To access the JSDoc, launch SPORTSEE/docs/index.html with live-server
+
+## HTML Validations
+
+- [AChecker](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_12_082022/blob/main/sportsee-front/docs/validations/AChecker.png)
+- [W3C](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_12_082022/blob/main/sportsee-front/docs/validations/W3C.png)
+
+## Author
+
+Guillaume Lyotard
+
+---

@@ -1,8 +1,18 @@
 import React from 'react'
 import { FaUserCircle, FaSignOutAlt } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { useStore } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom'
+import { logoutUser } from '../stores/userStore'
 
 const Logout = () => {
+  const store = useStore()
+  const navigate = useNavigate()
+
+  const logout = () => {
+    logoutUser(store)
+    navigate('/')
+  }
+
   return (
     <div className="main-nav-group">
       <Link className="main-nav-item" to="/profile">
@@ -13,6 +23,10 @@ const Logout = () => {
         <FaSignOutAlt className="fa fa-sign-out"></FaSignOutAlt>
         Sign Out
       </Link>
+      <button className="main-nav-item" onClick={logout}>
+        <FaSignOutAlt className="fa fa-sign-out"></FaSignOutAlt>
+        Sign Out
+      </button>
     </div>
   )
 }
