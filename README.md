@@ -4,7 +4,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
-![MongoDB Community Server](https://www.mongodb.com/try/download/community)
+![MongoDB](https://img.shields.io/badge/MongoDB-ff69b4?style=for-the-badge&logo=npm&logoColor=white)
 
 ---
 
@@ -18,29 +18,27 @@ New application for users authentication and accounts/transactions tracking for 
 
 - [NodeJS (**version 18.7.0**)](https://nodejs.org/en/)
 - [NPM (**version 8.14**)](https://www.npmjs.com/)
+- [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 
 ## Installing the app
 
-- Forke and clone the repository : https://github.com/BaleineSousCailloux/Lyotard_Guillaume_12_082022.git
-
-- install [MongoDB Community Server](https://www.mongodb.com/try/download/community)
+- Forke and clone the repository : https://github.com/BaleineSousCailloux/Lyotard_Guillaume_13_092022
 
 - Backend :
-    * once : open a new terminal and run `cd back` command,
-  then run `npm run populate-db`command
+    * once : open a new terminal and run `cd back` command
+        then run "npm install" command
+        then run `npm run populate-db`command
 
-  open a new terminal and run `cd back` command,
+  Open a new terminal and run `cd back` command,
   then run `npm run dev:server start`command
   the backend will open http://localhost:3001
 
 - FrontEnd:
-  open a new terminal and run `cd front` command,
+    * once : open a new terminal and run `cd front` command
+        then run "npm install" command
+
+  Open a new terminal and run `cd front` command,
   then run the `npm start` command will allow you to run the application on http://localhost:3000
-
-## Documentation
-
-open a new terminal and run `cd front` command, then run the `npm doc` command to generate the documentation.
-To access the JSDoc, launch SPORTSEE/docs/index.html with live-server
 
 ## HTML Validations
 
