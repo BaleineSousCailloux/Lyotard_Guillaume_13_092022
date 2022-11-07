@@ -8,7 +8,6 @@
 
 ---
 # ARGENT BANK Project
-![](front/src/public/argentBankLogo.png)
 
 ## Presentation
 
@@ -42,8 +41,8 @@ New application for users authentication and accounts/transactions tracking for 
 
 ## HTML Validations
 
-- [AChecker](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_12_082022/blob/main/sportsee-front/docs/validations/AChecker.png)
-- [W3C](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_12_082022/blob/main/sportsee-front/docs/validations/W3C.png)
+- [AChecker](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_13_092022/front/validations/AChecker.png)
+- [W3C](https://github.com/BaleineSousCailloux/Lyotard_Guillaume_13_092022/front/validations/W3C.png)
 
 ## Author
 
