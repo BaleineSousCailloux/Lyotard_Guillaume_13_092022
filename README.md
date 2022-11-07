@@ -7,7 +7,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-ff69b4?style=for-the-badge&logoColor=white)
 
 ---
-
+# ARGENT BANK Project
 ![](front/src/public/argentBankLogo.png)
 
 ## Presentation
