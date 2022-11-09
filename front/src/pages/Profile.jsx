@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { useStore } from 'react-redux'
 import { useNavigate } from 'react-router'
+import Accounts from '../components/Accounts'
 import ActiveButton from '../components/ActionButton'
 import BalanceLine from '../components/BalanceLine'
 import { userProfile, updateUserData, logoutUser } from '../stores/userStore'
@@ -71,23 +72,7 @@ function Profile() {
           </div>
         )}
       </div>
-      <h3 className="sr-only">Accounts</h3>
-
-      <BalanceLine
-        title="Argent Bank Checking (x8349)"
-        balance={0}
-        description="Available Balance"
-      />
-      <BalanceLine
-        title="Argent Bank Savings (x6712)"
-        balance={0}
-        description="Available Balance"
-      />
-      <BalanceLine
-        title="Argent Bank Credit Card (x8349)"
-        balance={0}
-        description="Current Balance"
-      />
+      <Accounts />
     </main>
   )
 }
