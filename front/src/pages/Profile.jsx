@@ -4,7 +4,6 @@ import { useStore } from 'react-redux'
 import { useNavigate } from 'react-router'
 import Accounts from '../components/Accounts'
 import ActiveButton from '../components/ActionButton'
-import BalanceLine from '../components/BalanceLine'
 import { userProfile, updateUserData, logoutUser } from '../stores/userStore'
 
 function Profile() {
