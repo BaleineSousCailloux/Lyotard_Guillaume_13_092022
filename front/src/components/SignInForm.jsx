@@ -11,10 +11,6 @@ function SignInForm() {
   const store = useStore()
   const navigate = useNavigate()
 
-  // useEffect(() => {
-  //   loginUser(store)
-  // }, [store])
-
   const submitForm = async () => {
     await loginUser(store, email, password)
     navigate('/profile')
@@ -50,7 +46,3 @@ function SignInForm() {
 }
 
 export default SignInForm
-
-// <Link to="/profile" className="sign-in-button">
-// Sign In
-// </Link>

@@ -3,18 +3,12 @@ import { FaUserCircle, FaSignOutAlt } from 'react-icons/fa'
 import { useStore } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { logoutUser } from '../stores/userStore'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const Logout = () => {
   const [first, setFirst] = useState('')
   const store = useStore()
-  useEffect(() => {
-    store.subscribe(async () => {
-      const temp = await store.getState().user?.data
-      setFirst(temp?.firstName)
-    })
-  }, [store])
-
+  store.subscribe(() => setFirst(store.getState()?.user?.data?.firstName))
   const logout = () => {
     logoutUser(store)
   }
